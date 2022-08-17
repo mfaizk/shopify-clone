@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopify-clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="container mx-auto flex p-6 bg-[#fbf7ed]">
+      <!-- nav-div-1-start -->
+      <div class="flex flex-grow justify-start item-center gap-4">
+        <img src="./assets/logo.png" alt="" />
+        <div class="hidden lg:flex flex-row gap-2 p-2">
+          <h5 class="self-center text-[#242B2E]">Start</h5>
+          <svg
+            class="h-4 self-center bg-yelllow-5"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <path
+              fill="#758283"
+              d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"
+            />
+          </svg>
+        </div>
+        <div class="hidden lg:flex flex-row gap-2 p-2">
+          <h5 class="self-center text-[#242B2E]">Sell</h5>
+          <svg
+            class="h-4 self-center bg-yelllow-5"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <path
+              fill="#758283"
+              d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"
+            />
+          </svg>
+        </div>
+        <div class="hidden lg:flex flex-row gap-2 p-2">
+          <h5 class="self-center text-[#242B2E]">Market</h5>
+          <svg
+            class="h-4 self-center bg-yelllow-5"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <path
+              fill="#758283"
+              d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"
+            />
+          </svg>
+        </div>
+        <div class="hidden lg:flex flex-row gap-2 p-2">
+          <h5 class="self-center text-[#242B2E]">Manage</h5>
+          <svg
+            class="h-4 self-center bg-yelllow-5"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <path
+              fill="#758283"
+              d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"
+            />
+          </svg>
+        </div>
+      </div>
+      <!-- nav-div-1-end -->
+      <!-- nav-div-2-start -->
+
+      <div class="flex flex-grow justify-end item-center gap-4">
+        <div class="hidden lg:flex flex-row gap-2 p-2">
+          <h5 class="self-center text-[#242B2E]">Pricing</h5>
+        </div>
+        <div class="hidden lg:flex flex-row gap-2 p-2">
+          <h5 class="self-center text-[#242B2E]">Learn</h5>
+          <svg
+            class="h-4 self-center bg-yelllow-5"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+          >
+            <path
+              fill="#758283"
+              d="M192 384c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L192 306.8l137.4-137.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-160 160C208.4 380.9 200.2 384 192 384z"
+            />
+          </svg>
+        </div>
+        <div class="flex flex-row gap-2 p-2">
+          <h5 class="self-center text-[#242B2E]">Log in</h5>
+          <img class="lg:hidden h-8" src="./assets/bars-solid.svg" alt="" />
+        </div>
+        <div class="hidden lg:flex flex-row gap-2 p-2 drop-shadow-md">
+          <a
+            class="self-center text-white py-2 px-4 bg-[#008060] rounded-l"
+            href="#"
+            >Try for free</a
+          >
+        </div>
+      </div>
+      <!-- nav-div-2-end -->
+    </nav>
+    <!-- hero-start -->
+
+    <section
+      class="container mx-auto flex p-12 bg-[#fbf7ed] flex-col lg:flex-row"
+    >
+      <div class="order-1">
+        <h1 class="text-3xl lg:text-5xl text-[#004c3f] font-semibold">
+          The easiest way to sell <br />
+          online in India
+        </h1>
+        <h4 class="mt-8 text-[#758283] text-xl">
+          Try one of the most powerful platforms on the market for free. No
+          <br />
+          technical knowledge needed.
+        </h4>
+        <div
+          class="flex justify-center lg:justify-start item-start flex-col lg:flex-row mt-12 gap-4"
+        >
+          <input
+            class="h-12 w-96 border-[1px] border-black rounded-l p-4 self-center lg:self-start"
+            type="text"
+            name="try"
+            id=""
+            placeholder="Enter your email address"
+          />
+          <div
+            class="bg-[#008060] flex justify-center item-center w-96 lg:max-w-fit p-2 lg:px-6 rounded-md text-white self-center"
+          >
+            <a class="self-center" href="">Try for free</a>
+          </div>
+        </div>
+        <h6 class="text-sm text-[#758283] my-12">
+          Try Shopify free for 14 days, no credit card required. By entering
+          your email, you agree to receive marketing <br />
+          emails from Shopify.
+        </h6>
+      </div>
+      <div class="min-w-fit order-2">
+        <img
+          class="w-[700px]"
+          src="./assets/exp-inbrochurebannerv2-video-poster-f61611dccbbf0aaa60f0e6aa3662448acc8ab35938a29bae99a61366874a43ef.png"
+          alt=""
+        />
+      </div>
+    </section>
+    <!-- hero-end -->
+
+    <!-- hero-section-1-start -->
+    <!-- heading-start -->
+    <section class="container mx-auto p-8 bg-[#004c3f]">
+      <div class="flex justify-between flex-col p-4 text-white">
+        <h1 class="text-2xl xl:text-4xl">Bring your business online</h1>
+        <div class="flex justify-between flex-col xl:flex-row mt-4">
+          <h6>
+            Create an ecommerce website backed by powerful tools that help you
+            find customers, drive sales, and manage your day-to-day.
+          </h6>
+          <h6 class="min-w-fit">Explore more examples</h6>
+        </div>
+      </div>
+      <!-- heading-end -->
+
+      <div
+        class="container flex gap-10 flex-wrap 2xl:flex-nowrap justify-center"
+      >
+        <!-- card-start -->
+        <div
+          class="flex flex-col justify-center item-center max-w-fit text-white"
+        >
+          <img
+            src="./assets/home-example-small-4144844351e226a9896cffee4bebdaeecb17897116c33a753bfd086b8b621e74.jpg"
+            alt=""
+            class="max-w-fit"
+          />
+          <h4 class="self-start">FOOD & DRINK</h4>
+          <h6 class="self-start">Blue Tokal</h6>
+        </div>
+        <!-- card-end -->
+        <!-- card-start -->
+        <div
+          class="flex flex-col justify-center item-center max-w-fit text-white"
+        >
+          <img
+            src="./assets/home-example-small-8b1c6b138414b76150e6e00f5143c4301a07b708aa6113dd7096f4340ddfecad.jpg"
+            alt=""
+            class="max-w-fit"
+          />
+          <h4 class="self-start">JEWELRY</h4>
+          <h6 class="self-start">Quirksmith</h6>
+        </div>
+        <!-- card-end -->
+        <!-- card-start -->
+        <div
+          class="flex flex-col justify-center item-center max-w-fit text-white"
+        >
+          <img
+            src="./assets/home-example-small-099933088cbe804543fbb1b0963a5d0a16365e73e6000949b5b0ab2bf4b21503.jpg"
+            alt=""
+            class="max-w-fit"
+          />
+          <h4 class="self-start">ELECTRONICS</h4>
+          <h6 class="self-start">Crossbeats</h6>
+        </div>
+        <!-- card-end -->
+        <!-- card-start -->
+        <div
+          class="flex flex-col justify-center item-center max-w-fit text-white"
+        >
+          <img
+            src="./assets/home-example-small-26afc247af7a3a7b1c9c585a645ccdff26e76156e98be7d9ff0fe9ecd4d3b675.jpg"
+            alt=""
+            class="max-w-fit"
+          />
+          <h4 class="self-start">BEAUTY</h4>
+          <h6 class="self-start">Mcaffeine</h6>
+        </div>
+        <!-- card-end -->
+        <!-- card-start -->
+        <div
+          class="flex flex-col justify-center item-center max-w-fit text-white"
+        >
+          <img
+            src="./assets/home-example-small-4575b175c798e22af5531bae02621396add507433f771db37b1515e9941f8a45.jpg"
+            alt=""
+            class="max-w-fit"
+          />
+          <h4 class="self-start">FASHION</h4>
+          <h6 class="self-start">Bunaai</h6>
+        </div>
+        <!-- card-end -->
+      </div>
+      <!-- heading-2-start -->
+      <div class="flex mt-24">
+        <h6 class="text-2xl lg:text-4xl text-white">
+          Take the best path forward
+        </h6>
+      </div>
+      <div></div>
+      <!-- heading-2-end -->
+
+      <!-- Take the best path forward-card-start -->
+
+      <div class="container mx-auto flex p-8 gap-10 flex-wrap">
+        <!-- card-start -->
+        <div class="text-white p-2 max-w-fit">
+          <img class="w-12" src="./assets/business-time-solid.svg" alt="" />
+          <h4 class="mt-6 font-semibold text-sm">Start an online business</h4>
+          <h6 class="mt-2 text-sm">
+            Create a business, whether you’ve got <br />
+            a fresh idea or are looking for a new way to <br />
+            make money.
+          </h6>
+        </div>
+        <!-- card-end -->
+        <!-- card-start -->
+        <div class="text-white p-2 max-w-fit">
+          <img class="w-12" src="./assets/cable-car-solid.svg" alt="" />
+          <h4 class="mt-6 font-semibold text-sm">Move your business online</h4>
+          <h6 class="mt-2 text-sm">
+            Turn your retail store into an online store <br />
+            and keep serving customers without missing <br />
+            a beat.
+          </h6>
+        </div>
+        <!-- card-end -->
+        <!-- card-start -->
+        <div class="text-white p-2 max-w-fit">
+          <img
+            class="w-12"
+            src="./assets/group-arrows-rotate-solid.svg"
+            alt=""
+          />
+          <h4 class="mt-6 font-semibold text-sm">Switch to Shopify</h4>
+          <h6 class="mt-2 text-sm">
+            Bring your business to Shopify, no matter <br />
+            which ecommerce platform you’re currently <br />
+            using.
+          </h6>
+        </div>
+        <!-- card-end -->
+        <!-- card-start -->
+        <div class="text-white p-2 max-w-fit">
+          <img class="w-12" src="./assets/people-group-solid.svg" alt="" />
+          <h4 class="mt-6 font-semibold text-sm">Hire a Shopify expert</h4>
+          <h6 class="mt-2 text-sm">
+            Get set up with the help of a trusted <br />
+            freelancer or agency from the Shopify <br />
+            Experts Marketplace.
+          </h6>
+        </div>
+        <!-- card-end -->
+      </div>
+      <!-- Take the best path forward-card-end -->
+    </section>
+
+    <!-- hero-section-1-end -->
+
+    <!-- hero-section-2-start -->
+    <section class="container mx-auto">
+      <!-- hero-heading-start -->
+      <div
+        class="container mx-auto flex flex-col justify-center item-center mt-24"
+      >
+        <h2 class="text-2xl lg:text-4xl font-extralight self-center">
+          With you wherever you’re going
+        </h2>
+        <h5
+          class="self-center mt-6 text-center text-[#758283] text-sm lg:text-xl"
+        >
+          One platform with all the ecommerce and point of sale features <br />
+          you need to start, run, and grow your business.
+        </h5>
+      </div>
+      <!-- hero-heading-end -->
+      <!-- card-start -->
+      <div
+        class="flex flex-col lg:flex-row justify-between item-center p-12 lg:px-36"
+      >
+        <img class="self-center" src="./assets/card-1.png" alt="" />
+        <div
+          class="flex flex-col item-center justify-center lg:w-auto w-96 self-center"
+        >
+          <h3 class="text-3xl font-light text-[#242B2E]">Sell everywhere</h3>
+          <h6 class="mt-6 text-[#758283] text-l min-w-fit">
+            Use one platform to sell products to anyone, anywhere—in <br />
+            person with Point of Sale and online through your website, social
+            <br />
+            media, and online marketplaces.
+          </h6>
+          <a class="text-[#008060] mt-6 text-l font-semibold" href="#"
+            >Explore ways to sell -></a
+          >
+        </div>
+      </div>
+      <!-- card-end -->
+      <!-- card-start -->
+      <div
+        class="flex flex-col lg:flex-row-reverse justify-between item-center p-12 lg:px-36"
+      >
+        <img class="self-center" src="./assets/card-2.png" alt="" />
+        <div
+          class="flex flex-col item-center justify-center lg:w-auto min-w-fit self-center"
+        >
+          <h3 class="text-3xl font-light text-[#242B2E]">
+            Market your business
+          </h3>
+          <h6 class="mt-6 text-[#758283] text-l min-w-fit">
+            Take the guesswork out of marketing with built-in tools that help
+            <br />
+            you create, execute, and analyze digital marketing campaigns.
+            <br />
+            media, and online marketplaces.
+          </h6>
+          <a class="text-[#008060] mt-6 text-l font-semibold" href="#"
+            >Explore how to market your business -></a
+          >
+        </div>
+      </div>
+      <!-- card-end -->
+      <!-- card-start -->
+      <div
+        class="flex flex-col lg:flex-row justify-between item-center p-12 lg:px-36"
+      >
+        <img class="self-center" src="./assets/card-3.png" alt="" />
+        <div
+          class="flex flex-col item-center justify-center lg:w-auto min-w-fit self-center"
+        >
+          <h3 class="text-3xl font-light text-[#242B2E]">
+            Market your business
+          </h3>
+          <h6 class="mt-6 text-[#758283] text-l">
+            Take the guesswork out of marketing with built-in tools that help
+            <br />
+            you create, execute, and analyze digital marketing campaigns.
+            <br />
+            media, and online marketplaces.
+          </h6>
+          <a class="text-[#008060] mt-6 text-l font-semibold" href="#"
+            >Explore how to market your business -></a
+          >
+        </div>
+      </div>
+      <!-- card-end -->
+    </section>
+    <!-- hero-section-2-end -->
+
+    <!-- hero-section-3-start -->
+    <section class="container mx-auto bg-[#f3fcf4] p-2 lg:p-24">
+      <!-- heading-start -->
+      <h1 class="text-[#055043] text-2xl lg:text-3xl mb-12">
+        Explore more from Shopify in India
+      </h1>
+      <!-- heading-end -->
+      <!-- card-start -->
+      <div
+        class="flex justify-between item-center lg:flex-row flex-col-reverse lg:max-w-auto max-w-fit bg-white"
+      >
+        <div class="p-12 flex flex-col justify-between">
+          <h3 class="font-semibold">START</h3>
+          <h3 class="text-xl text-[#242B2E]">
+            Launch your store with the help of a Shopify <br />
+            Expert
+          </h3>
+          <h5 class="text-[#758283] text-l">
+            Find hundreds of experts from India ready to help you get your
+            <br />
+            store up and running, from choosing a theme to building a fully
+            <br />
+            customized site.
+          </h5>
+          <a class="text-[#008060]" href="#">Browse Experts in India -></a>
+        </div>
+        <img
+          src="./assets/india-experts-small-432c16e7cd8ec09f3ae3aca42c58775001d5dc511e70608476ed7ee0e2d2e2c5.jpg"
+          alt=""
+        />
+      </div>
+      <!-- card-end -->
+    </section>
+    <!-- hero-section-3-end -->
+
+    <!-- earth-section-start -->
+
+    <section
+      class="container mx-auto flex flex-col justify-center item-center p-2 lg:p-24"
+    >
+      <h1 class="text-4xl font-light text-[#212326]">
+        Empowering independent business <br />
+        owners everywhere
+      </h1>
+      <h2 class="mt-12 text-xl text-[#3f4144]">
+        Millions of businesses in
+        <span class="font-semibold">175 countries</span> around the world have
+        <br />
+        made over <span class="font-semibold">$496 billion USD</span> in sales
+        using Shopify.
+      </h2>
+      <a class="text-[#008060] mt-6 text-l font-semibold" href="#"
+        >Learn more about Shopify -></a
+      >
+      <img class="w-1/2 mt-4 self-center" src="./assets/earth.png" alt="" />
+    </section>
+
+    <!-- earth-section-send -->
+  </body>
+</html>
+
+<!--  -->
+
+<!-- max-w-fit -->
